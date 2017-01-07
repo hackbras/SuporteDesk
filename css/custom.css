@@ -1,0 +1,282 @@
+/*========================================
+	Implementação para Desktop
+========================================*/
+@media (min-width: 800px){	
+* {margin:0;padding:0;vertical-align:baseline;}
+	h2{
+		text-align: center;
+		margin-top: 45px;
+		margin-bottom: 4%;
+		padding: 10px 0px 20px 0px;
+		background:#49C4BF; 
+		color:#fff;
+		/*border-top-left-radius:8px;
+		border-top-right-radius:8px;*/
+	}
+	h4{
+		font-size:38px;		
+		font-weight:bold;		
+		padding:20px 0px 20px 0px;
+		color:#137b77;
+	}
+	h5{
+		font-size:30px;		
+		border-radius:5px;
+		padding:10px 0px 10px 0px;
+	}
+	.col-pc{
+		width:45%;
+		float:left;
+		margin:2%;
+	}
+	/*Header*/
+	header{
+		background-image:url("../img/manutencao-pc-large.jpg");
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-position:center;
+		background-size:cover;		
+		width:100%;
+		height:100%;
+		margin-bottom:20px;;
+		}
+	header p{
+		font-size:35px;
+		color:black;
+		font-weight:bold;
+		text-align:center;
+		padding:200px 50px 0px 50px; 
+		padding-top:200px;
+
+	}
+	/*MENU*/
+	#menu{
+		height:70px;
+		width: 100%;
+		box-shadow:none;
+	}
+    #logo{
+    	padding:10px 0px 10px 0px;    	
+		float:left;
+    }
+    #logo img{
+    	width:300;
+    	margin-left:100px;
+    	margin-top:2px;
+    }
+	#menu-opcoes{
+		display:none;
+		width: 45%;
+		padding:5px 0px 0px 0px;
+	}
+	.icone{
+		width: 65px;
+		padding:10px 0px 10px 13px;
+	}
+		.logo-image{
+			width:25px;  
+		}
+		.logo-nome{
+			width:260px;
+		}
+
+	.slider{
+		height:700px;
+	}
+	#delivery{position:absolute;}
+
+	/*-----------------------
+	Servicos diverços
+	-------------------------*/
+	#services{
+		background-color:#bdbdbd;
+		text-align:center;
+		margin-bottom:-10px;
+	}
+
+	#servicos-diversos,
+	#manutencao-pc,
+	#manutencao-note,
+	#contact{
+		width: 100%;
+		margin: 30px 20px 2px 0px;
+		padding: 10px 0px 10px 0px;
+	}
+	#servicos-diversos{
+		margin-top:0px;
+		padding-top:0px;
+	}
+	#servicos-diversos .servicos,
+	#manutencao-pc .servicos,
+	#manutencao-note .servicos,
+	#contact .servicos{
+		width:30%;
+	}
+	/*#servicos-diversos h2,
+	#manutencao-pc h2,
+	#manutencao-note h2	{
+		text-align: center;
+		margin-top: 45px;
+		margin-bottom: 4%;
+		padding: 20px 0px 30px 0px;
+		background:#49C4BF; 
+		color:#fff;
+		/*border-top-left-radius:8px;
+		border-top-right-radius:8px;*/
+	}*/
+	#servicos-diversos>h2,#servicos-diversos{margin-top: 0% !important;}
+
+	#servicos-diversos h3,
+	#manutencao-pc h3,
+	#manutencao-note h3	{
+		background: rgb(136, 212, 209);
+		color: #fff;
+		text-align: center;		
+		border-radius:3px;
+		padding:20px 0px 20px 0px;
+	}
+	.servicos:hover{background-color: #d9d9d9;}
+	
+	#formatacao,#instalacao,#configuracao,
+	#troca-pecas,#manutencao,#recuperacao-componente,
+	#upgrade,#troca-tela,#troca-bateria{
+		width: 30%;
+		display:inline-block;	
+		margin-bottom: 10px;
+		margin-left: 2.2%;
+		padding:0px 8px 0px 8px;
+		border-radius: 8px;
+		position:relative;		
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.contraste-preto h5{background-color:#e1e2e2;}
+	
+	.contraste-verde h5{background-color:#dedddd;}
+
+	.contraste-preto:hover h5{
+		background-color:#eaf3f2;
+	}
+	.contraste-verde:hover h5{
+		background-color:#eaeaea;
+	}
+
+	.contraste-verde{background-color:#eaf3f2;}
+
+	#formatacao>.servico,#instalacao>.servico,#configuracao>.servico,
+	#troca-pecas>.servico,#manutencao>.servico,#recuperacao-componente>.servico,
+	#upgrade>.servico,#troca-tela>.servico,#troca-bateria>.servico{
+		float: left;
+		margin:5px 5px 5px 5px;			
+		height:345px;
+		display:-webkit-flex;
+		-webkit-align-items:center;
+	}
+	.servico img{
+		width: 400px;
+		border-radius:5px;
+		}
+	
+	#formatacao>.descricao-servico,#instalacao>.descricao-servico,#configuracao>.descricao-servico,
+	#troca-pecas>.descricao-servico,#manutencao>.descricao-servico,#recuperacao-componente>.descricao-servico,
+	#upgrade>.descricao-servico,#troca-tela>.descricao-servico,#troca-bateria>.descricao-servico{
+		margin-top:-5%;
+	}
+	#formatacao:hover .descricao-servico,#instalacao:hover .descricao-servico,#configuracao:hover .descricao-servico,
+	#troca-pecas:hover .descricao-servico,#manutencao:hover .descricao-servico,#recuperacao-componente:hover .descricao-servico,
+	#upgrade:hover .descricao-servico,#troca-tela:hover .descricao-servico,#troca-bateria:hover .descricao-servico	{
+		display:block;
+	}
+	
+	#formatacao:hover img,#instalacao:hover img,#configuracao:hover img,
+	#troca-pecas:hover img,#manutencao:hover img,#recuperacao-componente:hover img,
+	#upgrade:hover img,#troca-tela:hover img,#troca-bateria:hover img{
+		opacity:0.3;
+	}
+	.descricao-servico{
+		padding:2px 2px 2px 2px;
+		width: 45%;
+		height:200px;
+		/*float: right;*/
+		font: 20px bold, "Courier New";
+		left: 15%;	
+		position:absolute;
+		top:37%;	
+		display:none;
+		margin-top:-250px;
+	}
+	.descricao-servico>li{width: 200%;}
+
+	/*
+	=========================================
+		Serviços 
+	=========================================
+	*/ 
+	services1,.services2,.services3{			
+		width: 25%;
+		margin: 25px 10px 30px 1%;
+		border: 1px solid #ccc;		
+		background-color: #b3b3b3;
+		text-align: center;	
+		float: left;
+		transition-duration: 1s;	
+	}
+	.services1:hover,.services2:hover,.services3:hover{
+		color: #fff;
+	}
+	.services2 > img,.services3 > img{width: 100%;}
+	.services1>img{width:340px;}
+	
+	/*
+	=========================================
+		Grupo Footer
+	=========================================
+	*/
+
+	footer{
+		padding-top: 25px;
+		margin: auto;
+		height: 90px;
+		color: white;	
+		background-color: #404040;
+		clear: both;
+		font-family: verdana;
+		text-align: center;
+	}
+
+	/*
+	=========================================
+		Sub Grupo Footer Rodapé
+	=========================================
+	*/
+	.copyright{
+		text-align: center;
+		color:#49C4BF;
+		font-size:16px;
+		font-weight: bold;
+	}
+	.copyright>a{
+		text-decoration: none;
+		color: #49C4BF;
+		transition-duration: 1s;
+	}			
+	.copyright>a:hover{
+		color: #3333ff;
+	}
+	#autor,#site{
+		font-weight: bold;
+		color: #49C4BF;
+		text-decoration: none;
+	}
+	#autor:hover,#site:hover{
+		color: #3333ff;
+	}
+	#source{
+		font-family: 'Orbitron', sans-serif;
+		font-weight: bold;
+		color: #000;
+		text-decoration: none;
+	}
+	#source:hover{
+		color: #3333ff;
+	}
+}

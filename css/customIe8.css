@@ -1,0 +1,343 @@
+* {
+margin:0;
+padding:0;
+list-style:none;
+vertical-align:baseline;
+}
+/*========================================
+		Header
+========================================*/
+	
+	body{
+		width: 800px;
+		background-color:#d6d6c2;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#container{
+		background-color:white;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		padding-top: 10px;
+	}
+	.logo,.logo-responsivo,.menu-responsivo,.menu-icone{
+		display: none;
+	}
+	#logo{
+		margin: 5px auto 10px 5px;
+		text-decoration: none;
+	}
+	#logo>img{
+		width: 40%;
+	}
+	.logo-ie{	
+		padding: 5px;
+		margin: 0px;
+		font-size: 30px;
+		text-decoration: none;
+	}
+
+	/*
+	=========================================
+		Grupo Menu
+	=========================================
+	*/
+	nav{		
+		margin-top: 0px;
+		padding: 9px;	
+		background-color: #666666;
+	}
+
+	nav>a{
+		padding: 10px;
+		margin: -1.5px;
+	}
+
+	nav>a:hover{
+		background-color: #333333;
+		color: white;
+		border-bottom: 2px solid #49C4BF;
+	}
+
+
+	.botao{
+		background-color: white;
+		text-decoration: none;
+		color: black;	
+	}
+	/*
+	=========================================
+		Grupo HOME
+	=========================================
+	*/
+	/*
+	=========================================
+		Sub Grupo Banner
+	=========================================
+	*/
+	.banner_master{
+		display: none;
+		width: 790px;
+		text-align: center;
+		padding-top: 35px;
+		padding-right: auto;
+		padding-bottom: 35px;
+		padding-left: auto;	
+		border: 1px solid black;
+		margin: auto;
+	}
+
+	/*
+	=========================================
+		Sub Grupo Fake carrossel
+	=========================================
+	*/
+	.FakeCarrossel{
+		padding: 8px;
+		width: 780px;
+	}
+
+	section{
+		padding-top: 5px;
+	}
+
+	/*
+	=========================================
+		Grupo Blog
+	=========================================
+	*/
+	.espacamento{
+		padding: 25px;
+		margin-right: auto;
+		margin-bottom: 0;
+		margin-left: auto;
+	}
+	#artigos{
+		width: 550px;	
+		float: left;
+	}
+	#menu-temas{
+		width: 150px;
+		float: right;
+	}
+	.banner_blog{
+		text-align: center;
+		padding-top: 200px;
+		padding-right: auto;
+		padding-bottom: 200px;
+		padding-left: auto;	
+		border: 1px solid black;
+		margin: auto;
+	}
+	.by,.share,.comment{
+		font-weight: bold;
+	}
+	/*
+	==========================================
+		Grupo serviços
+	==========================================
+	*/
+	.icon-descricao{
+		width: 15px;
+		text-decoration: underline;
+	}
+	#services{
+		font-size: 20px;
+	}
+	.link{
+		cursor: pointer;
+	}
+	.link{
+		text-decoration: none;
+	}
+	/*
+	=========================================
+		Serviços 1
+	=========================================
+	*/
+
+	.services1{
+		border: 1px solid #ccc;
+		width: 750px;
+		text-align: center;
+	}
+	.services1:hover{
+		border: 1px solid #777;
+	}
+	.services1 > img{
+		width: 100%;
+	}
+	.icon-descricao{
+		width: 30px
+	}
+	/*
+	=========================================
+		Serviços 2 e 3
+	=========================================
+	*/
+	.services2,.services3{	
+		margin: 10px;
+		border: 1px solid #ccc;
+		text-align: center;	
+		float: left;
+		width: 47%;
+	}
+	.services2:hover,.services3:hover{
+		border: 1px solid #777;
+	}
+	.services2 > img,.services3 > img{
+		width: 100%;
+	}
+
+	/*
+	=========================================
+		Grupo de Contatos
+	=========================================
+	*/
+	.contact {
+		text-align: center;
+	}
+
+	.titulo_contatos{
+		margin: 20px auto 55px auto;
+	}
+
+	/*
+	=========================================
+		Sub Grupo 1 Contatos corporativos
+	=========================================
+	*/
+
+	.contatos{
+		margin-left: 10px;
+		width: 45%;
+		float: right;
+		text-align: left;		
+		font-size: 20px;
+		color: #000;
+		display: table;
+	}
+
+	/*
+	=========================================
+		Sub Grupo 2 Enviar email
+	=========================================
+	*/
+	label{
+		font-weight: bold;
+		font-size: 18px;
+		color:#49C4BF;
+	}
+	.contatos-row{
+		display: table-row;
+	}
+	.contatos-row>label{
+		display: table-cell;
+	}
+
+	.e-mail{
+		display: table-column-group;
+		padding-right: 50px;
+		width: 45%;
+		float: left;
+		padding-bottom: 50px;
+		text-align: left;
+	}
+	.email-row>textarea{
+		margin-right: 20px;
+	}
+	.email-row>label{
+		display: table-caption;
+		font-weight: bold;
+		font-size: 18px;
+		color:#49C4BF;
+	}
+	.email-row>[type="email"],.email-row>[type="text"]{		
+		display: table-cell;
+		width: 100%;
+		height: 23px;
+		margin: 5px auto;			
+		padding-left: 5px;
+	}
+	textarea{
+		margin-top: 5px;
+	}
+	input[type="submit"]{	
+		margin-top: 10px;	
+		width: 80px;
+		height: 30px;
+		font-size:100%;
+		font-weight: bold;
+		background-color: #49C4BF;
+		color: #fff;
+		float: right;
+	}
+	input[type="submit"]:hover{		
+		background-color: #666;
+		color: #fff;
+		cursor: pointer;
+	}
+	/*
+	=========================================
+		Sub Grupo 3 Interação com usuário
+	=========================================
+	*/
+	input[type="email"]:focus,
+	input[type="text"]:focus,
+	textarea:focus{
+		border: 1px solid #49C4BF;
+	}	
+	input:focus + .interacao-formulario,
+	textarea:focus + .interacao-formulario{
+		display: inline-block;
+	}
+	/*
+	=========================================
+		Grupo Footer
+	=========================================
+	*/
+
+	footer{
+		padding-top: 20px;
+		margin: auto;
+		height: 90px;
+		color: white;	
+		background-color: #333333;
+		clear: both;
+		text-align: center;
+	}
+	/*
+	=========================================
+		Sub Grupo Footer Rodapé
+	=========================================
+	*/
+	.copyright{
+		text-align: center;
+		color:#49C4BF;		
+		font-size:18px;
+		font-weight: bold;
+	}
+	.copyright>a{
+		text-decoration: none;
+		color: #49C4BF;
+	}			
+	.copyright>a:hover{
+		color: green;
+	}
+	#autor,#site{
+		font-weight: bold;
+		color: #49C4BF;
+		text-decoration: none;
+	}
+	#autor:hover,#site:hover{
+		color: #3333ff;
+	}
+	#source{
+		font-family: 'Orbitron', sans-serif;
+		font-weight: bold;
+		color: #000;
+		text-decoration: none;
+	}
+	#source:hover{
+		color: #3333ff;
+	}
+

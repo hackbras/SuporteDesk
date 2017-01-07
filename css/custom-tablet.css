@@ -1,0 +1,94 @@
+@media (max-width: 480px) {
+	#menu{
+		height:50px;
+		width: 100%;
+	}
+    #logo{
+    	padding:5px 0px 10px 0px;    	
+		float:left;
+    }
+	.icone{
+		width: 50px;
+		padding:5px 0px 10px 10px;
+	}
+		.logo-image{
+			width:25px;  	
+		}
+		.logo-nome{
+			width:260px;
+		}
+
+	#menu-opcoes{
+		display:block;
+		width: 45%;
+	}
+	h2{
+		text-align: center;
+		margin-top: 35px;
+		margin-bottom: 4%;
+		padding: 10px 0px 20px 0px;
+		background:#49C4BF; 
+		color:#fff;
+		font-size:50px;
+		/*border-top-left-radius:8px;
+		border-top-right-radius:8px;*/
+	}
+	h5{
+		font-size:28px;
+		border-radius:5px;
+		padding:10px 0px 10px 0px;
+		font-weight:bold;
+	}
+	/*#servicos-diversos,
+	#manutencao-pc,
+	#manutencao-note,
+	#contact{
+	}*/
+
+	#formatacao,#instalacao,#configuracao,
+	#troca-pecas,#manutencao,#recuperacao-componente,
+	#upgrade,#troca-tela,#troca-bateria{
+		width:95%;
+	}
+
+
+    #servicos-diversos>h3,
+	#manutencao-pc>h3,
+	#manutencao-note>h3	{
+		font-size: 40px;
+	}	/*
+	#formatacao>h4,#configuracao>h4,
+	#manutencao>h4,#upgrade>h4,#troca-bateria>h4,
+	#instalacao>h4,#troca-pecas>h4,
+    #recuperacao-componente>h4,#troca-tela>h4{
+	}	*/
+
+	#formatacao img,#instalacao img,#configuracao img,
+	#troca-pecas img,#manutencao img,#recuperacao-componente img,
+	#upgrade img,#troca-tela img,#troca-bateria img{
+		opacity:0.7;
+	}
+	#formatacao:hover img,#instalacao:hover img,#configuracao:hover img,
+	#troca-pecas:hover img,#manutencao:hover img,#recuperacao-componente:hover img,
+	#upgrade:hover img,#troca-tela:hover img,#troca-bateria:hover img{
+		opacity:0.3;
+	}
+	.descricao-servico{
+		display:block;
+		font-size:20px;
+		font-weight:bold;
+
+	}
+    /*
+	#formatacao,#configuracao,
+	#manutencao,#upgrade,#troca-bateria{
+	}
+
+    #instalacao,#troca-pecas,
+    #recuperacao-componente,#troca-tela{
+    }
+	
+	footer{
+	}*/
+
+}

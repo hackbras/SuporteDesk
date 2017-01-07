@@ -1,0 +1,254 @@
+/*========================================
+	ImplementaÃ§Ã£o para mobile
+========================================*/
+@media screen and (max-width: 768px) and (min-width: 481px) {	
+* {margin:0;padding:0;vertical-align:baseline;}
+	
+	h2{
+		text-align: center;
+		margin-top: 35px;
+		margin-bottom: 4%;
+		padding: 10px 0px 20px 0px;
+		background:#49C4BF; 
+		color:#fff;
+		/*border-top-left-radius:8px;
+		border-top-right-radius:8px;*/
+	}
+	h5{
+		font-size:10px;
+		border-radius:5px;
+		padding:10px 0px 10px 0px;
+	}
+	.col-pc{
+		width:45%;
+		float:left;
+		margin:2%;
+	}
+	/*Header*/
+	header{width:100%;}
+
+	/*MENU*/
+	#menu{
+		height:70px;
+		width: 100%;
+	}
+    #logo{
+    	padding:10px 0px 10px 0px;    	
+		float:left;
+    }
+	#menu-opcoes{
+		display:none;
+		width: 45%;
+		padding:5px 0px 0px 0px;
+	}
+	.icone{
+		width: 65px;
+		padding:10px 0px 10px 13px;
+	}
+		.logo-image{
+			width:25px;  
+		}
+		.logo-nome{
+			width:260px;
+		}
+
+	#image-home{
+		background:url("img\manutencao-pc-large.jpg");
+		}
+	.slide-home{
+		height:400px;
+	}
+	#delivery{position:absolute;}
+
+	/*-----------------------
+	Servicos diverÃ§os
+	-------------------------*/
+	#services{position:relative;}
+
+	#servicos-diversos,
+	#manutencao-pc,
+	#manutencao-note,
+	#contact{
+		width: 100%;
+		margin: 30px 20px 2px 0px;
+		padding: 10px 0px 10px 0px;
+	}
+	/*#servicos-diversos h2,
+	#manutencao-pc h2,
+	#manutencao-note h2	{
+		text-align: center;
+		margin-top: 45px;
+		margin-bottom: 4%;
+		padding: 20px 0px 30px 0px;
+		background:#49C4BF; 
+		color:#fff;
+		/*border-top-left-radius:8px;
+		border-top-right-radius:8px;*/
+	}*/
+	#servicos-diversos>h2,#servicos-diversos{margin-top: 0% !important;}
+
+	#servicos-diversos h3,
+	#manutencao-pc h3,
+	#manutencao-note h3	{
+		background: rgb(136, 212, 209);
+		color: #fff;
+		text-align: center;		
+		border-radius:3px;
+		padding:20px 0px 20px 0px;
+		font-size:30px;
+	}
+	.servicos:hover{background-color: #d9d9d9;}
+	
+	#formatacao,#instalacao,#configuracao,
+	#troca-pecas,#manutencao,#recuperacao-componente,
+	#upgrade,#troca-tela,#troca-bateria{
+		width: 45%;
+		height:412px;
+		display:inline-block;	
+		margin-bottom: 10px;
+		margin-left: 2.2%;
+		padding:0px 8px 0px 8px;
+		border-radius: 8px;
+		position:relative;		
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	#formatacao h5,#instalacao h5,#configuracao h5,
+	#troca-pecas h5,#manutencao h5,#recuperacao-componente h5,
+	#upgrade h5,#troca-tela h5,#troca-bateria h5{
+		font-size:18px;
+		font-weight:bold;
+	}
+	.contraste-preto h5{background-color:#e1e2e2;}
+	
+	.contraste-verde h5{background-color:#dedddd;}
+
+	.contraste-preto:hover h5{
+		background-color:#eaf3f2;
+	}
+	.contraste-verde:hover h5{
+		background-color:#eaeaea;
+	}
+
+	.contraste-verde{background-color:#eaf3f2;}
+
+	/*celular*/
+	#formatacao:hover .descricao-servico,#instalacao:hover .descricao-servico,#configuracao:hover .descricao-servico,
+	#troca-pecas:hover .descricao-servico,#manutencao:hover .descricao-servico,#recuperacao-componente:hover .descricao-servico,
+	#upgrade:hover .descricao-servico,#troca-tela:hover .descricao-servico,#troca-bateria:hover .descricao-servico{
+		display:block;
+	}
+
+	#formatacao>.servico,#instalacao>.servico,#configuracao>.servico,
+	#troca-pecas>.servico,#manutencao>.servico,#recuperacao-componente>.servico,
+	#upgrade>.servico,#troca-tela>.servico,#troca-bateria>.servico{
+		float: left;
+		margin:5px 5px 5px 5px;			
+		height:310px;
+		display:-webkit-flex;
+		-webkit-align-items:center;
+	}
+	.servico img{
+		width: 400px;
+		border-radius:5px;
+		}
+	
+	#formatacao>.descricao-servico,#instalacao>.descricao-servico,#configuracao>.descricao-servico,
+	#troca-pecas>.descricao-servico,#manutencao>.descricao-servico,#recuperacao-componente>.descricao-servico,
+	#upgrade>.descricao-servico,#troca-tela>.descricao-servico,#troca-bateria>.descricao-servico{
+		margin-top:-12%;
+	}
+	#formatacao img,#instalacao img,#configuracao img,
+	#troca-pecas img,#manutencao img,#recuperacao-componente img,
+	#upgrade img,#troca-tela img,#troca-bateria img{
+		opacity:0.7;
+	}
+	#formatacao:hover img,#instalacao:hover img,#configuracao:hover img,
+	#troca-pecas:hover img,#manutencao:hover img,#recuperacao-componente:hover img,
+	#upgrade:hover img,#troca-tela:hover img,#troca-bateria:hover img{
+		opacity:0.3;
+	}
+	.descricao-servico{
+		display:none;
+		font-size:20px;
+		font-weight:bold;
+	}
+	#formatacao>.descricao-servico{		
+		font-size:13px !important;
+		padding-right:3px;
+	}
+	.descricao-servico>li{width: 200%;}
+
+	/*
+	=========================================
+		ServiÃ§os 
+	=========================================
+	*/ 
+	services1,.services2,.services3{			
+		width: 25%;
+		margin: 25px 10px 30px 1%;
+		border: 1px solid #ccc;		
+		background-color: #b3b3b3;
+		text-align: center;	
+		float: left;
+		transition-duration: 1s;	
+	}
+	.services1:hover,.services2:hover,.services3:hover{
+		color: #fff;
+	}
+	.services2 > img,.services3 > img{width: 100%;}
+	.services1>img{width:340px;}
+	
+	/*
+	=========================================
+		Grupo Footer
+	=========================================
+	*/
+
+	footer{
+		padding-top: 25px;
+		margin: auto;
+		height: 90px;
+		color: white;	
+		background-color: #404040;
+		clear: both;
+		font-family: verdana;
+		text-align: center;
+	}
+
+	/*
+	=========================================
+		Sub Grupo Footer RodapÃ©
+	=========================================
+	*/
+	.copyright{
+		text-align: center;
+		color:#49C4BF;
+		font-size:16px;
+		font-weight: bold;
+	}
+	.copyright>a{
+		text-decoration: none;
+		color: #49C4BF;
+		transition-duration: 1s;
+	}			
+	.copyright>a:hover{
+		color: #3333ff;
+	}
+	#autor,#site{
+		font-weight: bold;
+		color: #49C4BF;
+		text-decoration: none;
+	}
+	#autor:hover,#site:hover{
+		color: #3333ff;
+	}
+	#source{
+		font-family: 'Orbitron', sans-serif;
+		font-weight: bold;
+		color: #000;
+		text-decoration: none;
+	}
+	#source:hover{
+		color: #3333ff;
+	}
+}
