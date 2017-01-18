@@ -1,5 +1,5 @@
 /*========================================
-	Implementação para Desktop
+	ImplementaÃ§Ã£o para Desktop
 ========================================*/
 @media (min-width: 800px){	
 * {margin:0;padding:0;vertical-align:baseline;}
@@ -14,10 +14,10 @@
 		border-top-right-radius:8px;*/
 	}
 	h4{
-		font-size:38px;		
-		font-weight:bold;		
+		font-size:38px;
+		font-weight:bold;
 		padding:20px 0px 20px 0px;
-		color:#137b77;
+		color: #626767;
 	}
 	h5{
 		font-size:30px;		
@@ -29,6 +29,7 @@
 		float:left;
 		margin:2%;
 	}
+
 	/*Header*/
 	header{
 		background-image:url("../img/manutencao-pc-large.jpg");
@@ -54,6 +55,7 @@
 		height:70px;
 		width: 100%;
 		box-shadow:none;
+		background-color:rgba(128, 128, 128, 0.42);
 	}
     #logo{
     	padding:10px 0px 10px 0px;    	
@@ -81,12 +83,33 @@
 		}
 
 	.slider{
-		height:700px;
+		height:100%;
 	}
 	#delivery{position:absolute;}
 
+	.secao1{
+		height:700px; 
+		background-image:url("../img/redes.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;
+		opacity:0.4;
+		margin-top:10px;
+	}
+	.secao2{
+		height:700px; 
+		background-color:#49C4BF;
+		background:linear-gradient(to bottom right,#49C4BF,#bdbdbd);
+		margin-bottom:10px;
+	}
+	.legenda{
+		background-color:rgba(128, 128, 128, 0.6);
+		margin:175px 30px 30px 30px; 
+		padding:10px 0px 10px 0px;
+		border-radius:11px;
+	}
+
 	/*-----------------------
-	Servicos diverços
+	Servicos diverÃ§os
 	-------------------------*/
 	#services{
 		background-color:#bdbdbd;
@@ -208,7 +231,7 @@
 
 	/*
 	=========================================
-		Serviços 
+		ServiÃ§os 
 	=========================================
 	*/ 
 	services1,.services2,.services3{			
@@ -245,7 +268,7 @@
 
 	/*
 	=========================================
-		Sub Grupo Footer Rodapé
+		Sub Grupo Footer RodapÃ©
 	=========================================
 	*/
 	.copyright{

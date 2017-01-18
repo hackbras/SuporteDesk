@@ -3,6 +3,7 @@
     	  <meta charset="utf-8">
 		  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 		
+		  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 		  <script src="js\validation.js"></script>
@@ -30,7 +31,7 @@
    <body>
    <header>	
    		<div class="navbar-fixed"><!--navbar-fixed-->
-		<nav id="menu" class="transparent"><!--grey darken-1-->	
+		<nav id="menu"><!--grey darken-1-->	
 			<div class="nav-wrapper">
 				<a id="logo" href="#" class="brand-logo">
 					<img class="logo-image logo responsive-img" src="img/logo-oficial2.png">				
@@ -45,11 +46,11 @@
 			</div>						
 		</nav>		
 		</div>	
-		<p>Se você precisa formatar, configurar e até mesmo montar o seu computador, entre em contato conosco e saiba mais informações.</p>				
+		<p class="legenda">Se você precisa formatar, configurar e até mesmo montar o seu computador, entre em contato conosco e saiba mais informações.</p>				
 		
 	</header>
-
-	<section style="height:700px"></section>
+	
+	<section class="secao2"></section>
 
 	<section class="slider">			
 		<!--Carroussel-->
@@ -57,13 +58,13 @@
 			<li>
 				<img src="img/configuracao_formatacao.jpg" alt="Alternate Text" /></li>
 			<li>
-				<img src="img/notebook.jpg" alt="Alternate Text" /></li>
+				<img src="img/notebook2.png" alt="Alternate Text" /></li>
 			<li>
 				<img src="img/stress.jpg" alt="Alternate Text" /></li>
 		</ul>
 	</section>
 
-	<section style="height:700px"></section>
+	<section class="secao1"></section>
 
 	<section id="descricao-servicos" >
 		<h4 id="services">SERVIÇOS</h4>
