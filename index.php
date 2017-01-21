@@ -48,9 +48,40 @@
 		</div>	
 		<p class="legenda">Se você precisa formatar, configurar e até mesmo montar o seu computador, entre em contato conosco e saiba mais informações.</p>				
 		
-	</header>
-	
-	<section class="secao2"></section>
+	</header>	
+
+	<section class="plan-format">
+		<h3>Planos de Formatação</h3>
+
+		<article class="col4 plan-format1">
+		<h4 class="legenda-plan">Básico</h4>
+		<ul>
+			<li>Backup</li>
+			<li>Orçamento sem compromisso</li>
+		</ul>
+		</article>
+		
+		<article class="col4 plan-format2">
+		<h4 class="legenda-plan">Intermediário</h4>
+		<ul>
+			<li>Backup</li>
+			<li>Orçamento sem compromisso</li>
+			<li class="destaque">Garantia de 3 meses</li>
+			<li class="destaque">Instalação de Word, Excel e Power point</li>
+		</ul>
+		</article>
+
+		<article class="col4 plan-format3">
+		<h4 class="legenda-plan">Avançado</h4>
+		<ul>
+			<li>Backup</li>
+			<li>Orçamento sem compromisso</li>
+			<li>Garantia de 3 meses</li>
+			<li>Instalação de Word, Excel e Power point</li>
+			<li class="destaque">Formatação Definitiva</li>
+		</ul>
+		</article>
+	</section>
 
 	<section class="slider">			
 		<!--Carroussel-->
@@ -64,7 +95,6 @@
 		</ul>
 	</section>
 
-	<section class="secao1"></section>
 
 	<section id="descricao-servicos" >
 		<h4 id="services">SERVIÇOS</h4>
@@ -203,6 +233,8 @@
 
 		</article>	
 	</section>
+
+	<section class="tab-services"></section>
 
 	<section id="contact">
 
