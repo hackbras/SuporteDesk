@@ -1,10 +1,10 @@
 /*========================================
-	ImplementaÃ§Ã£o para Desktop
+	ImplementaÃƒÂ§ÃƒÂ£o para Desktop
 ========================================*/
 @media (min-width: 800px){	
 * {margin:0;padding:0;vertical-align:baseline;}
 	.col1{width:100%;}
-	.col2{¨width:50%;}
+	.col2{Â¨width:50%;}
 	.col3{width:33%;}
 	.col4{width:25%;}
 	.col5{width:20%;}
@@ -16,8 +16,6 @@
 		padding: 10px 0px 20px 0px;
 		background:#49C4BF; 
 		color:#fff;
-		/*border-top-left-radius:8px;
-		border-top-right-radius:8px;*/
 	}
 	h3{
 		font-size:41px;
@@ -60,39 +58,75 @@
 		text-align:center;
 		padding:200px 50px 0px 50px; 
 		padding-top:200px;
-
 	}
+	
 	/*MENU*/
-	#menu{
-		height:70px;
+	#menu{		
+		width:100%;
+		height:100px;
+		background:linear-gradient(to bottom, black,transparent);
+	}
+	 .logo-image{
+	 	width:350px;
+	 	padding-left:20px;
+	 	padding-top:30px;
+		padding-left:15px;
+    }    
+	.icone{
+		width: 50px;
+		margin-left:20px;
+	}
+    #logo img{
+    	/*display:inline-block;*/
+    	/*width:300px;
+    	margin-left:100px;
+    	margin-top:2px;*/
+    }
+	#opcoes-menu{
+		height:100%;
+		width:200;
+		background-color:rgba(128, 128, 128, 0.83);
+		position:absolute;
+		padding:20px 10px 10px 20px;
+		color:black;
+		border-top-right-radius:5px;
+		position:fixed;
+		z-index:9999;
+		display:none;
+	}
+	#opcoes-menu a{		
+		color:#49c4bf;
+		font-weight:bold;
+		font-size:18px;
+	}
+	/*.no-top{
+		height:100px;
 		width: 100%;
 		box-shadow:none;
-		background-color:rgba(128, 128, 128, 0.42);
+		background-color:gray;
 	}
-    #logo{
-    	padding:10px 0px 10px 0px;    	
-		float:left;
-    }
-    #logo img{
-    	width:300;
-    	margin-left:100px;
-    	margin-top:2px;
-    }
-	#menu-opcoes{
+   
+    
+	#opcoes-menu{
 		display:none;
-		width: 45%;
-		padding:5px 0px 0px 0px;
+		width:250px;
+		height:100%;
+		padding:35px 0px 0px 30px;
+		margin:0px 0px 0px 0px;
+		text-decoration:none;
+		position:absolute;
+		background-color:rgba(0, 0, 0, 0.87);		
+		border-top-right-radius:10px;
+		z-index:9999px;
 	}
-	.icone{
-		width: 65px;
-		padding:10px 0px 10px 13px;
+	
+	.logo-image{
+		width:350px; 
+		padding:0 0 10px 15;
 	}
-		.logo-image{
-			width:25px;  
-		}
-		.logo-nome{
-			width:260px;
-		}
+	.logo-nome{
+		width:260px;
+	}*/
 
 	.slider{
 		height:100%;
@@ -109,15 +143,30 @@
 	}
 	.plan-format{
 		height:700px; 
+		width:100%;
 		margin:5px 0px 10px 0px;
 		font-weight:bold;
 		text-align:center;
+	}
+	.plan-format-bas{
+		float:left;
+		background-image:url("../img/formatacao-plan-basico.jpg");
+		transform:rotateY(5deg);
+	}
+	.plan-format-int{
+		float:left;
+		background-image:url("../img/formatacao-plan-intermediario.jpg");
+	}
+	.plan-format-av{
+		float:right;
+		background-image:url("../img/formatacao-plan-avancado.jpg");
 	}	
 	.plan-format h3{		
 		background-color:white;
 		background:linear-gradient(to bottom right,white,rgba(144, 212, 209, 0.62));
 		padding-bottom:20px;
 		margin-bottom:45px;
+		transform:rotate(-90deg);
 	}
 	.legenda-plan{
 		background-color:rgba(128, 128, 128, 0.42);
@@ -126,389 +175,53 @@
 		border-radius:11px;
 		color:#cafffd;
 	}
-	.plan-format1,.plan-format2,.plan-format3{	
+	.plan-format-bas,.plan-format-int,.plan-format-av{	
+		height:80%;
 		margin:0% 4% 2% 4%;
 		padding:7px 0px 7px 0px;
-		height:80%;
 		text-align:center;
 		background-size:contain;
 		background-repeat:no-repeat;
 	}
-	.plan-format1 ul,.plan-format2 ul,.plan-format3 ul{
+	.plan-format-bas ul,.plan-format-int ul,.plan-format-av ul{
 		margin-top:90%;
 		text-align:left;
 		bold-right:1px solid rgba(0, 0, 0, 0.57);
 	}
 	.destaque{
 		background-color:rgba(128, 128, 128, 0.06);
-	}
-	.plan-format1{
-		float:left;
-		background-image:url("../img/formatacao-plan-basico.jpg");
-	}
-	.plan-format2{
-		float:left;
-		background-image:url("../img/formatacao-plan-intermediario.jpg");
-	}
-	.plan-format3{
-		float:right;
-		background-image:url("../img/formatacao-plan-avancado.jpg");
-	}
+	}	
 
 	.legenda{
-		background-color:rgba(128, 128, 128, 0.6);
+		background:linear-gradient(to top left,transparent,rgba(171, 171, 171, 0.68));
 		margin:175px 30px 30px 30px; 
 		padding:10px 0px 10px 0px;
-		border-radius:11px;
+		border-radius:5px;
 	}
 
 	/*-----------------------
-	Servicos diverÃ§os
+	Servicos diverÃƒÂ§os
 	-------------------------*/
 	#services{
-		background-color:#bdbdbd;
-		text-align:center;
-		margin-bottom:-10px;
-	}
-
-	#servicos-diversos,
-	#manutencao-pc,
-	#manutencao-note,
-	#contact{
-		width: 100%;
-		margin: 30px 20px 2px 0px;
-		padding: 10px 0px 10px 0px;
-	}
-	#servicos-diversos{
-		margin-top:0px;
-		padding-top:0px;
-	}
-	#servicos-diversos .servicos,
-	#manutencao-pc .servicos,
-	#manutencao-note .servicos,
-	#contact .servicos{
-		width:30%;
-	}
-	/*#servicos-diversos h2,
-	#manutencao-pc h2,
-	#manutencao-note h2	{
-		text-align: center;
-		margin-top: 45px;
-		margin-bottom: 4%;
-		padding: 20px 0px 30px 0px;
-		background:#49C4BF; 
-		color:#fff;
-		/*border-top-left-radius:8px;
-		border-top-right-radius:8px;*/
-	}*/
-	#servicos-diversos>h2,#servicos-diversos{margin-top: 0% !important;}
-
-	#servicos-diversos h3,
-	#manutencao-pc h3,
-	#manutencao-note h3	{
-		background: rgb(136, 212, 209);
-		color: #fff;
-		text-align: center;		
-		border-radius:3px;
-		padding:20px 0px 20px 0px;
-	}
-	.servicos:hover{background-color: #d9d9d9;}
-	
-	#formatacao,#instalacao,#configuracao,
-	#troca-pecas,#manutencao,#recuperacao-componente,
-	#upgrade,#troca-tela,#troca-bateria{
-		width: 30%;
-		display:inline-block;	
-		margin-bottom: 10px;
-		margin-left: 2.2%;
-		padding:0px 8px 0px 8px;
-		border-radius: 8px;
-		position:relative;		
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	}
-	.contraste-preto h5{background-color:#e1e2e2;}
-	
-	.contraste-verde h5{background-color:#dedddd;}
-
-	.contraste-preto:hover h5{
-		background-color:#eaf3f2;
-	}
-	.contraste-verde:hover h5{
-		background-color:#eaeaea;
-	}
-
-	.contraste-verde{background-color:#eaf3f2;}
-
-	#formatacao>.servico,#instalacao>.servico,#configuracao>.servico,
-	#troca-pecas>.servico,#manutencao>.servico,#recuperacao-componente>.servico,
-	#upgrade>.servico,#troca-tela>.servico,#troca-bateria>.servico{
-		float: left;
-		margin:5px 5px 5px 5px;			
-		height:345px;
-		display:-webkit-flex;
-		-webkit-align-items:center;
-	}
-	.servico img{
-		width: 400px;
-		border-radius:5px;
-		}
-	
-	#formatacao>.descricao-servico,#instalacao>.descricao-servico,#configuracao>.descricao-servico,
-	#troca-pecas>.descricao-servico,#manutencao>.descricao-servico,#recuperacao-componente>.descricao-servico,
-	#upgrade>.descricao-servico,#troca-tela>.descricao-servico,#troca-bateria>.descricao-servico{
-		margin-top:-5%;
-	}
-	#formatacao:hover .descricao-servico,#instalacao:hover .descricao-servico,#configuracao:hover .descricao-servico,
-	#troca-pecas:hover .descricao-servico,#manutencao:hover .descricao-servico,#recuperacao-componente:hover .descricao-servico,
-	#upgrade:hover .descricao-servico,#troca-tela:hover .descricao-servico,#troca-bateria:hover .descricao-servico	{
-		display:block;
-	}
-	
-	#formatacao:hover img,#instalacao:hover img,#configuracao:hover img,
-	#troca-pecas:hover img,#manutencao:hover img,#recuperacao-componente:hover img,
-	#upgrade:hover img,#troca-tela:hover img,#troca-bateria:hover img{
-		opacity:0.3;
-	}
-	.descricao-servico{
-		padding:2px 2px 2px 2px;
-		width: 45%;
-		height:200px;
-		/*float: right;*/
-		font: 20px bold, "Courier New";
-		left: 15%;	
-		position:absolute;
-		top:37%;	
-		display:none;
-		margin-top:-250px;
-	}
-	.descricao-servico>li{width: 200%;}
-
-	/*
-	=========================================
-		ServiÃ§os 
-	=========================================
-	*/ 
-	services1,.services2,.services3{			
-		width: 25%;
-		margin: 25px 10px 30px 1%;
-		border: 1px solid #ccc;		
-		background-color: #b3b3b3;
-		text-align: center;	
-		float: left;
-		transition-duration: 1s;	
-	}
-	.services1:hover,.services2:hover,.services3:hover{
-		color: #fff;
-	}
-	.services2 > img,.services3 > img{width: 100%;}
-	.services1>img{width:340px;}
-	
-	/*
-	=========================================
-		Grupo Footer
-	=========================================
-	*/
-
-	footer{
-		padding-top: 25px;
-		margin: auto;
-		height: 90px;
-		color: white;	
-		background-color: #404040;
-		clear: both;
-		font-family: verdana;
-		text-align: center;
-	}
-
-	/*
-	=========================================
-		Sub Grupo Footer RodapÃ©
-	=========================================
-	*/
-	.copyright{
-		text-align: center;
-		color:#49C4BF;
-		font-size:16px;
-		font-weight: bold;
-	}
-	.copyright>a{
-		text-decoration: none;
-		color: #49C4BF;
-		transition-duration: 1s;
-	}			
-	.copyright>a:hover{
-		color: #3333ff;
-	}
-	#autor,#site{
-		font-weight: bold;
-		color: #49C4BF;
-		text-decoration: none;
-	}
-	#autor:hover,#site:hover{
-		color: #3333ff;
-	}
-	#source{
-		font-family: 'Orbitron', sans-serif;
-		font-weight: bold;
-		color: #000;
-		text-decoration: none;
-	}
-	#source:hover{
-		color: #3333ff;
-	}
-}/*========================================
-	ImplementaÃ§Ã£o para Desktop
-========================================*/
-@media (min-width: 800px){	
-* {margin:0;padding:0;vertical-align:baseline;}
-	.col1{width:100%;}
-	.col2{¨width:50%;}
-	.col3{width:33%;}
-	.col4{width:25%;}
-	.col5{width:20%;}
-	.col6{width:16;}
-	h2{
-		text-align: center;
-		margin-top: 45px;
-		margin-bottom: 4%;
-		padding: 10px 0px 20px 0px;
-		background:#49C4BF; 
-		color:#fff;
-		/*border-top-left-radius:8px;
-		border-top-right-radius:8px;*/
-	}
-	h3{
-		font-size:41px;
-		font-weight:bold;
-		padding-top:30px;
-		color: #626767;
-	}
-	h4{
-		font-size:38px;
-		font-weight:bold;
-		padding:20px 0px 20px 0px;
-		color: #626767;
-	}
-	h5{
-		font-size:30px;		
-		border-radius:5px;
-		padding:10px 0px 10px 0px;
-	}
-	.col-pc{
-		width:45%;
-		float:left;
-		margin:2%;
-	}
-
-	/*Header*/
-	header{
-		background-image:url("../img/manutencao-pc-large.jpg");
-		background-repeat:no-repeat;
-		background-attachment:fixed;
+		background:url('../img/configuracao4.jpg');
+		background-repeat:no-repeat;	
 		background-position:center;
-		background-size:cover;		
-		width:100%;
-		height:100%;
-		margin-bottom:20px;;
-		}
-	header p{
-		font-size:35px;
-		color:black;
-		font-weight:bold;
-		text-align:center;
-		padding:200px 50px 0px 50px; 
-		padding-top:200px;
-
-	}
-	/*MENU*/
-	#menu{
-		height:70px;
-		width: 100%;
-		box-shadow:none;
-		background-color:rgba(128, 128, 128, 0.42);
-	}
-    #logo{
-    	padding:10px 0px 10px 0px;    	
-		float:left;
-    }
-    #logo img{
-    	width:300;
-    	margin-left:100px;
-    	margin-top:2px;
-    }
-	#menu-opcoes{
-		display:none;
-		width: 45%;
-		padding:5px 0px 0px 0px;
-	}
-	.icone{
-		width: 65px;
-		padding:10px 0px 10px 13px;
-	}
-		.logo-image{
-			width:25px;  
-		}
-		.logo-nome{
-			width:260px;
-		}
-
-	.slider{
-		height:100%;
-	}
-	#delivery{position:absolute;}
-
-	.tab-services{
-		height:700px; 
-		background-image:url("../img/redes.jpg");
-		background-repeat:no-repeat;
 		background-size:cover;
-		opacity:0.4;
-		margin-top:10px;
-	}
-	.plan-format{
-		height:700px; 
-		margin:5px 0px 10px 0px;
-		font-weight:bold;
-		text-align:center;
-	}
-	.plan-format h3{		
-		background-color:white;
-		background:linear-gradient(to bottom right,white,#90d4d1);
-	}
-	.plan-format1,.plan-format2,.plan-format3{
-		margin:0% 4% 2% 4%;		
-		padding:7px 0px 7px 0px;
-		height:80%;
-		text-align:center;	
-		background-size:contain;
-		background-repeat:no-repeat;
-	}
-	.plan-format1{
-		float:left;
-		background-image:url("../img/formatacao-plan-basico.jpg");
-	}
-	.plan-format2{
-		float:left;		
-		background-image:url("../img/formatacao-plan-intermediario.jpg");
-	}
-	.plan-format3{
-		float:right;	
-		background-image:url("../img/formatacao-plan-avancado.jpg");
-	}
-	.legenda{
-		background-color:rgba(128, 128, 128, 0.6);
-		margin:175px 30px 30px 30px; 
-		padding:10px 0px 10px 0px;
-		border-radius:11px;
-	}
-
-	/*-----------------------
-	Servicos diverÃ§os
-	-------------------------*/
-	#services{
-		background-color:#bdbdbd;
 		text-align:center;
 		margin-bottom:-10px;
+		color:white;
+		opacity:0.5px;
+	}
+	#formatacao servico img,#instalacao servico img,#configuracao servico img,
+	#troca-pecas servico img,#manutencao servico img,#recuperacao-componente servico img,
+	#upgrade servico img,#troca-tela servico img,#troca-bateria servico img{
+		position:relative;
+	}
+	.more-details{
+		position:absolute;
+		display:none;
+		top:39%;
+		left:33%;
 	}
 
 	#servicos-diversos,
@@ -529,18 +242,6 @@
 	#contact .servicos{
 		width:30%;
 	}
-	/*#servicos-diversos h2,
-	#manutencao-pc h2,
-	#manutencao-note h2	{
-		text-align: center;
-		margin-top: 45px;
-		margin-bottom: 4%;
-		padding: 20px 0px 30px 0px;
-		background:#49C4BF; 
-		color:#fff;
-		/*border-top-left-radius:8px;
-		border-top-right-radius:8px;*/
-	}*/
 	#servicos-diversos>h2,#servicos-diversos{margin-top: 0% !important;}
 
 	#servicos-diversos h3,
@@ -552,7 +253,7 @@
 		border-radius:3px;
 		padding:20px 0px 20px 0px;
 	}
-	.servicos:hover{background-color: #d9d9d9;}
+	.servicos:hover{background-color: rgba(217, 217, 217, 0.29);}
 	
 	#formatacao,#instalacao,#configuracao,
 	#troca-pecas,#manutencao,#recuperacao-componente,
@@ -563,21 +264,27 @@
 		margin-left: 2.2%;
 		padding:0px 8px 0px 8px;
 		border-radius: 8px;
-		position:relative;		
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		position:relative;	
+		border:1px solid rgba(6, 6, 6, 0.15);	
 	}
-	.contraste-preto h5{background-color:#e1e2e2;}
+	#formatacao h5,#instalacao h5,#configuracao h5,
+	#troca-pecas h5,#manutencao h5,#recuperacao-componente h5,
+	#upgrade h5,#troca-tela h5,#troca-bateria h5{
+		border:1px solid rgba(0, 0, 0, 0.09);
+	}
+	#formatacao:hover,#instalacao:hover,#configuracao:hover,
+	#troca-pecas:hover,#manutencao:hover,#recuperacao-componente:hover,
+	#upgrade:hover,#troca-tela:hover,#troca-bateria:hover{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);		
+	}	
+		
+	.contraste-preto h5{background:linear-gradient(rgba(189, 189, 189, 0.26),white,rgba(189, 189, 189, 0.26));}
 	
-	.contraste-verde h5{background-color:#dedddd;}
 
 	.contraste-preto:hover h5{
-		background-color:#eaf3f2;
+		background:linear-gradient( rgba(21, 189, 179, 0.11),white,rgba(21, 189, 179, 0.11));
+		 background: -webkit-linear-gradient( rgba(21, 189, 179, 0.11),white,rgba(21, 189, 179, 0.11)); /* For Safari 5.1 to 6.0 */
 	}
-	.contraste-verde:hover h5{
-		background-color:#eaeaea;
-	}
-
-	.contraste-verde{background-color:#eaf3f2;}
 
 	#formatacao>.servico,#instalacao>.servico,#configuracao>.servico,
 	#troca-pecas>.servico,#manutencao>.servico,#recuperacao-componente>.servico,
@@ -591,6 +298,7 @@
 	.servico img{
 		width: 400px;
 		border-radius:5px;
+		border:1px solid rgba(6, 6, 6, 0.19);
 		}
 	
 	#formatacao>.descricao-servico,#instalacao>.descricao-servico,#configuracao>.descricao-servico,
@@ -598,34 +306,42 @@
 	#upgrade>.descricao-servico,#troca-tela>.descricao-servico,#troca-bateria>.descricao-servico{
 		margin-top:-5%;
 	}
-	#formatacao:hover .descricao-servico,#instalacao:hover .descricao-servico,#configuracao:hover .descricao-servico,
+	/*#formatacao:hover .descricao-servico,#instalacao:hover .descricao-servico,#configuracao:hover .descricao-servico,
 	#troca-pecas:hover .descricao-servico,#manutencao:hover .descricao-servico,#recuperacao-componente:hover .descricao-servico,
 	#upgrade:hover .descricao-servico,#troca-tela:hover .descricao-servico,#troca-bateria:hover .descricao-servico	{
 		display:block;
+	}*/
+	#formatacao:hover .more-details,#instalacao:hover .more-details,#configuracao:hover .more-details,
+	#troca-pecas:hover .more-details,#manutencao:hover .more-details,#recuperacao-componente:hover .more-details,
+	#upgrade:hover .more-details,#troca-tela:hover .more-details,#troca-bateria:hover .more-details{
+		display:block;
+	}
+	.service-image{
+		filter:brightness(1);
 	}
 	
-	#formatacao:hover img,#instalacao:hover img,#configuracao:hover img,
-	#troca-pecas:hover img,#manutencao:hover img,#recuperacao-componente:hover img,
-	#upgrade:hover img,#troca-tela:hover img,#troca-bateria:hover img{
-		opacity:0.3;
+	#formatacao:hover .service-image,#instalacao:hover .service-image,#configuracao:hover .service-image,
+	#troca-pecas:hover .service-image,#manutencao:hover .service-image,#recuperacao-componente:hover .service-image,
+	#upgrade:hover .service-image,#troca-tela:hover .service-image,#troca-bateria:hover .service-image{
+		filter:blur(2px);
 	}
 	.descricao-servico{
 		padding:2px 2px 2px 2px;
 		width: 45%;
 		height:200px;
-		/*float: right;*/
 		font: 20px bold, "Courier New";
 		left: 15%;	
 		position:absolute;
 		top:37%;	
 		display:none;
 		margin-top:-250px;
+		font-weight:bold;
 	}
 	.descricao-servico>li{width: 200%;}
 
 	/*
 	=========================================
-		ServiÃ§os 
+		Servicos 
 	=========================================
 	*/ 
 	services1,.services2,.services3{			
@@ -662,7 +378,7 @@
 
 	/*
 	=========================================
-		Sub Grupo Footer RodapÃ©
+		Sub Grupo Footer RodapÃƒÂ©
 	=========================================
 	*/
 	.copyright{
@@ -697,3 +413,16 @@
 		color: #3333ff;
 	}
 }
+
+/*
+	filter:brightness(200%);
+	filter:opacity(30%);
+	filter:grayscale(100%);
+	filter:blur(10%);
+	filter:contrast(10%);
+	filter:saturate(5%);
+	filter:sepia(10%);
+	filter:contrast(10%) brightness(200%);
+	filter:none;
+	filter:invert(100%);
+*/

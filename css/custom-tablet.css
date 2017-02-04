@@ -1,7 +1,9 @@
 @media (max-width: 480px) {
 	#menu{
-		height:50px;
+		height:70px;
 		width: 100%;
+		box-shadow:none;
+		background-color:transparent;
 	}
     #logo{
     	padding:5px 0px 10px 0px;    	

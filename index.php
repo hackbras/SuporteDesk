@@ -16,8 +16,8 @@
 		  <link rel="stylesheet" href="css\custom-tablet.css">
 		  <link rel="stylesheet" href="css\custom-mobile.css">
 
-		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>		
-		<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+		  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>		
+		  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 
 		
 	    <title>SuporteDesk</title>
@@ -30,30 +30,39 @@
     </head>
    <body>
    <header>	
-   		<div class="navbar-fixed"><!--navbar-fixed-->
-		<nav id="menu"><!--grey darken-1-->	
-			<div class="nav-wrapper">
-				<a id="logo" href="#" class="brand-logo">
-					<img class="logo-image logo responsive-img" src="img/logo-oficial2.png">				
-				</a>
-				<a href="#">
-					<img class="icone" src="img\menu1.png">				
-				</a>
-				<ul id="menu-opcoes" class="right hide-on-med-and-down">
-					<li><a href="#descricao-servicos"> SERVICOS</a></li>
-					<li><a href="#contact"> CONTATOS</a></li>
-				</ul>					
-			</div>						
-		</nav>		
-		</div>	
+
+		<script>
+			$(document).ready(function(){							
+					$(".icone").click(function(){
+						$("#opcoes-menu").animate({
+							width:'toggle'
+						});
+						//$(".logo-image").hide();
+					});		
+			});		
+		</script>	
+   		<div id="menu">
+			<div id="logo">		
+				<img class="icone" src="img\menu1.png">				
+				<img class="logo-image" src="img/logo-oficial2.png">				
+			</div>
+
+			<ul id="opcoes-menu"><!--grey darken-1-->					
+				<li><a href="#menu"> Home</a></li>	
+				<li><a href="#plan-format"> Planos Formatação</a></li>					
+				<li><a href="#descricao-servicos"> Serviços</a></li>	
+				<li><a href="#contact"> Contatos</a></li>						
+			</ul>
+		</div>
+
 		<p class="legenda">Se você precisa formatar, configurar e até mesmo montar o seu computador, entre em contato conosco e saiba mais informações.</p>				
 		
 	</header>	
 
-	<section class="plan-format">
+	<section id="plan-format" class="plan-format">
 		<h3>Planos de Formatação</h3>
 
-		<article class="col4 plan-format1">
+		<article class="col4 plan-format-bas">
 		<h4 class="legenda-plan">Básico</h4>
 		<ul>
 			<li>Backup</li>
@@ -61,7 +70,7 @@
 		</ul>
 		</article>
 		
-		<article class="col4 plan-format2">
+		<article class="col4 plan-format-int">
 		<h4 class="legenda-plan">Intermediário</h4>
 		<ul>
 			<li>Backup</li>
@@ -71,7 +80,7 @@
 		</ul>
 		</article>
 
-		<article class="col4 plan-format3">
+		<article class="col4 plan-format-av">
 		<h4 class="legenda-plan">Avançado</h4>
 		<ul>
 			<li>Backup</li>
@@ -87,9 +96,9 @@
 		<!--Carroussel-->
 		<ul class="slides">
 			<li>
-				<img src="img/configuracao_formatacao.jpg" alt="Alternate Text" /></li>
+				<img src="img/configuracao_formatacao.jpg" alt="Configuração de Computadores" /></li>
 			<li>
-				<img src="img/notebook2.png" alt="Alternate Text" /></li>
+				<img src="img/notebook2.png" alt="Manutenção de notebooks" /></li>
 			<li>
 				<img src="img/stress.jpg" alt="Alternate Text" /></li>
 		</ul>
@@ -101,26 +110,41 @@
 		<article id="servicos-diversos">
 			<h3>Instalação e Configuração</h3>	
 
-			<div id="formatacao" class="contraste-preto col-tb servicos">
-			<h5 class="center-align" >Formatação</h5>
-				<div class="servico">			
-				<img class="responsive-img" src="img/virus.jpg" >
+			<script>
+				$(document).ready(function(){		
+					$(window).scroll(function(){
+						if ($(document).scrollTop() > 100){
+							$("#menu").addClass("no-top");
+						}
+						else{							
+							$("#menu").removeClass("no-top");	
+						}
 
+					});
+				});
+			</script>
+
+			<div id="formatacao" class="contraste-preto col-tb servicos">
+				<h5 class="center-align">Formatação</h5>
+				<div class="servico">			
+					<img class="service-image responsive-img" src="img/virus.jpg" >
 				</div>
-				<ol class="descricao-servico" style="font-size:20px">
+					
+					<img id="more-details" class="more-details" src="img/plus.png">
+					<ol class="descricao-servico" style="font-size:20px">
 						<li>Fazemos o backup de seus dados.</li>
 						<li>Formatamos, configuramos, damos orientações e ferramentas para que tenha a melhor experiência possível com seu computador e por um preço justo.</li>
 						<li>Damos garantia do serviço</li>
 					</ol>
 			</div>
 
-			<div id="instalacao" class="col-tb servicos contraste-verde">
+			<div id="instalacao" class="col-tb servicos contraste-preto">
 				<h5 class="center-align" >Instalações</h5>
 				<div class="servico">
-
-				<img class="responsive-img" src="img/manutencao2.jpg" >
-
+					<img class="service-image responsive-img" src="img/manutencao2.jpg" >
 				</div>
+
+					<img id="more-details" class="more-details" src="img/plus.png">
 					<ol class="descricao-servico">
 						<li>Instalação de Placas;</li>
 						<li>Instalação de drivers;</li>
@@ -131,10 +155,10 @@
 			<div id="configuracao" class="contraste-preto col-tb servicos">
 				<h5 class="center-align" >Configuração</h5>
 				<div class="servico">
-
-				<img class="responsive-img" src="img/configuracao.png" >
-
+					<img class="service-image responsive-img" src="img/configuracao2.png" >
 				</div>
+	
+				<img id="more-details" class="more-details" src="img/plus.png">
 				<ol class="descricao-servico">
 					<li>Configuração do Sistema operação</li>
 					<li>Configuração de programas</li>
@@ -147,13 +171,13 @@
 		<article id="manutencao-pc">
 			<h3>Manutenção do Computador</h3>
 
-			<div id="troca-pecas" class="col-tb servicos contraste-verde">
+			<div id="troca-pecas" class="col-tb servicos contraste-preto">
 				<h5 class="center-align" >Checkup e Upgrade</h5>
 				<div class="servico">
-
-				<img class="responsive-img" src="img/troca-pecas.png" >
-
+					<img class="service-image responsive-img" src="img/troca-pecas.png" >
 				</div>
+
+				<img id="more-details" class="more-details" src="img/plus.png">
 				<ol class="descricao-servico">
 					<li>Limpeza;</li>
 					<li>Troca de peças: HD, Memória, cooler, placa wireless e etc...</li>
@@ -164,23 +188,23 @@
 			<div id="manutencao" class="contraste-preto col-tb servicos">
 			<h5 class="center-align" >Montagem e Manutenção</h5>
 				<div class="servico">
-
-				<img class="responsive-img" src="img/manutencao.png">
-
+					<img class="service-image responsive-img" src="img/manutencao.png">
 				</div>
+
+				<img id="more-details" class="more-details" src="img/plus.png">
 				<ol class="descricao-servico">
 					<li>Motagem de computador de baixo custo e Gamer;</li>
 					<li>Correção de defeitos diversos.</li>
 				</ol>
 			</div>
 
-			<div id="recuperacao-componente" class="col-tb servicos contraste-verde">
+			<div id="recuperacao-componente" class="col-tb servicos contraste-preto">
 			<h5 class="center-align" >Recuperação de Placa Mãe</h5>
 				<div class="servico">
-
-				<img class="responsive-img" src="img/manutencao.jpg">
-
+					<img class="service-image responsive-img" src="img/manutencao.jpg">
 				</div>
+
+				<img id="more-details" class="more-details" src="img/plus.png">
 				<ul class="descricao-servico">
 					<li>Troca de componentes eletrônicos.</li>
 				</ul>
@@ -194,10 +218,10 @@
 			<div id="upgrade" class="contraste-preto col-tb servicos">
 			<h5 class="center-align" >Manutenção</h5>
 				<div class="servico">
-
-				<img class="responsive-img" src="img/note.jpg" >
-
+					<img class="service-image responsive-img" src="img/note.jpg" >
 				</div>			
+
+				<img id="more-details" class="more-details" src="img/plus.png">		
 				<ol class="descricao-servico">
 					<li>Troca de peças: HD, Memória, cooler, placa wireless e etc...</li>
 					<li>Upgrade.</li>
@@ -206,13 +230,13 @@
 				</ol>
 			</div>
 
-			<div id="troca-tela" class="col-tb servicos contraste-verde">
+			<div id="troca-tela" class="col-tb servicos contraste-preto">
 				<h5 class="center-align" >Tela Quebrada</h5>
 				<div class="servico">
-
-				<img class="responsive-img" src="img/note2.jpg" >
-
+					<img class="service-image responsive-img" src="img/note2.jpg" >
 				</div>
+	
+				<img id="more-details" class="more-details" src="img/plus.png">
 				<ol class="descricao-servico">
 					<li>Troca e reparo de cabos flat de tela LCD</li>
 					<li>Troca de tela LCD quebradas.</li>
@@ -222,10 +246,10 @@
 			<div id="troca-bateria" class="contraste-preto col-tb servicos">
 				<h5 class="center-align" >Baterias Viciadas</h5>
 				<div class="servico">
-
-				<img class="responsive-img" src="img/baterias-notebook.jpg" >
-
+					<img class="service-image responsive-img" src="img/baterias-notebook.jpg" >
 				</div>
+
+				<img id="more-details" class="more-details" src="img/plus.png">	
 				<ul class="descricao-servico">
 					<li>Troca e/ou manutenção de baterias viciadas</li>
 				</ul>
@@ -234,7 +258,7 @@
 		</article>	
 	</section>
 
-	<section class="tab-services"></section>
+	<!--<section class="tab-services"></section>-->
 
 	<section id="contact">
 
@@ -314,7 +338,7 @@
 			<span id="dev"></span> 
 		<!--<a id="autor" href="https://about.me/miqueiasmelo">Miquéias</a> site: 			
 		<a id="site" href="http://www.losapp.net">losapp.net</a>-->				
-		<a id="source" href="https://github.com/hackbras/novosuportedesk"><img class="responsive-img" class="responsive-img"  src="img/github.png" width="20px"></a>
+		<a id="source" href="https://github.com/hackbras/suportedesk-v5.0"><img class="responsive-img" class="responsive-img"  src="img/github.png" width="20px"></a>
 		
 		<div id="versoes" class="modal bootom-sheet">
 			<div class="modal-content">
