@@ -1,35 +1,161 @@
 <html>
-    <head>
-    	  <meta charset="utf-8">
-		  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+	<!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
 		
-		  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-		  <script src="js\validation.js"></script>
-		  <script src="js\efeitos.js"></script>
-		  <script type="text/javascript" src="js\compatibility.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script src="js\validation.js"></script>
+	<script src="js\efeitos.js"></script>
+	<script type="text/javascript" src="js\compatibility.js"></script>
 
 
-		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-		  <link rel="stylesheet" href="css\custom.css">		  
-		  <link rel="stylesheet" href="css\custom-tablet.css">
-		  <link rel="stylesheet" href="css\custom-mobile.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<link rel="stylesheet" href="css\custom.css">		  
+	<!--<link rel="stylesheet" href="css\custom-tablet.css">
+	<link rel="stylesheet" href="css\custom-mobile.css">-->
 
-		  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>		
-		  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>		
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 
 		
-	    <title>SuporteDesk</title>
-	    <link rel="shortcut icon" href="img/logo_suportedeskv4.png" type="image/x-png"/>
-	   <!--[if lt IE 9]>
-	   <script src="js\html5shiv.min.js"></script>
-	   <![endif]-->
+	<title>SuporteDesk</title>
+	<link rel="shortcut icon" href="img/logo_suportedeskv4.png" type="image/x-png"/>
+	<!--[if lt IE 9]>
+	<script src="js\html5shiv.min.js"></script>
+	<![endif]-->
 
 
-    </head>
-   <body>
-   <header>	
+</head>
+<body>
+   	<!--DESCRIÇÃO DE SERVIÇOS1-->
+	<div id="planFormatModal">
+		<section id="plan-format" class="planFormatModalContainer plan-format">
+			<span>
+				<h3 width="40%">Planos de Formatação</h3>	
+				<a href="#formatacao" class="fechar" width="40%">Fechar.</a>			
+			</span>
+
+			<article class="col4 plan-format-bas">
+			<h4 class="legenda-plan">Básico</h4>
+			<ul>
+				<li>Backup</li>
+				<li>Orçamento sem compromisso</li>
+			</ul>
+			</article>
+					
+			<article class="col4 plan-format-int">
+			<h4 class="legenda-plan">Intermediário</h4>
+			<ul>
+				<li>Backup</li>
+				<li>Orçamento sem compromisso</li>
+				<li class="destaque">Garantia de 3 meses</li>
+				<li class="destaque">Instalação de Word, Excel e Power point</li>
+			</ul>
+			</article>
+
+			<article class="col4 plan-format-av">
+			<h4 class="legenda-plan">Avançado</h4>
+			<ul>
+				<li>Backup</li>
+				<li>Orçamento sem compromisso</li>
+				<li>Garantia de 3 meses</li>
+				<li>Instalação de Word, Excel e Power point</li>
+				<li class="destaque">Formatação Definitiva</li>
+			</ul>
+			</article>
+		</section>
+	</div>
+
+	<div id="instalacaoModal">
+		<div id="instalacaoModalContainer">
+			<a href="#instalacao" class="fechar" width="40%">Fechar.</a>	
+			<img src="img/paginaemconstrucao.png" alt="Página em Manutenção.">	
+		</div>	
+	<div>
+
+	<div id="configModal">
+		<div id="configModalContainer">
+			<a href="#configuracao" class="fechar" width="40%">Fechar.</a>	
+			<img src="img/paginaemconstrucao.png" alt="Página em Manutenção.">			
+		</div>	
+	<div>
+
+	<!--DESCRIÇÃO DE SERVIÇOS2-->
+
+	<div id="checkModal">
+		<div id="checkModalContainer">
+			<a href="#troca-pecas" class="fechar" width="40%">Fechar.</a>	
+			<img src="img/paginaemconstrucao.png" alt="Página em Manutenção.">			
+		</div>	
+	<div>
+
+	<div id="montModal">
+		<div id="montModalContainer">
+			<a href="#manutencao" class="fechar" width="40%">Fechar.</a>	
+			<img src="img/paginaemconstrucao.png" alt="Página em Manutenção.">			
+		</div>	
+	<div>
+
+	<div id="recuperacaoModal">
+		<div id="recuperacaoModalContainer">
+			<a href="#recuperacao-componente" class="fechar" width="40%">Fechar.</a>	
+			<img src="img/paginaemconstrucao.png" alt="Página em Manutenção.">			
+		</div>	
+	<div>
+
+	<!--DESCRIÇÃO DE SERVIÇOS3-->	
+
+	<div id="manutModal">
+		<div id="manutModalContainer">
+			<a href="#upgrade" class="fechar" width="40%">Fechar.</a>	
+			<img src="img/paginaemconstrucao.png" alt="Página em Manutenção.">			
+		</div>	
+	<div>
+
+	<div id="telaModal">
+		<div id="telaModalContainer">
+			<a href="#troca-tela" class="fechar" width="40%">Fechar.</a>	
+			<img src="img/paginaemconstrucao.png" alt="Página em Manutenção.">			
+		</div>	
+	<div>
+
+	<div id="bateriaModal">
+		<div id="bateriaModalContainer">
+			<a href="#troca-bateria" class="fechar" width="40%">Fechar.</a>	
+			<img src="img/paginaemconstrucao.png" alt="Página em Manutenção.">			
+		</div>	
+	<div>
+
+	<!--VERSÕES SISTEMA-->
+	<div id="versaoModal" >
+		<div id="versaoModalContainer">
+			<a href="#rodape" class="fechar" >Fechar.</a>							
+			<div >
+				<h2>VERSÕES</h2>
+
+				<h3>SuporteDesk Versão 0.5</h3>
+				<img src="img/versoes/v0.5.jpg">
+
+				<h3>SuporteDesk Versão 1.0</h3>
+				<img src="img/versoes/v1.0.jpg">
+						
+				<h3>SuporteDesk Versão 2.0</h3>		
+				<img src="img/versoes/v2.0.PNG">
+
+				<h3>SuporteDesk Versão 3.0</h3>
+				<img src="img/versoes/v3.0.PNG">								
+						
+				<h3>SuporteDesk Versão 4.0</h3>
+				<img src="img/versoes/v4.0.PNG">
+
+			</div>
+
+		</div>	
+	<div>
+
+	<header>	
 
 		<script>
 			$(document).ready(function(){							
@@ -37,60 +163,30 @@
 						$("#opcoes-menu").animate({
 							width:'toggle'
 						});
-						//$(".logo-image").hide();
+						$(".close").hide();
 					});		
 			});		
 		</script>	
    		<div id="menu">
 			<div id="logo">		
 				<img class="icone" src="img\menu1.png">				
-				<img class="logo-image" src="img/logo-oficial2.png">				
+				<img id="" class="logo-image" src="img/logo-oficial2.png">				
 			</div>
 
-			<ul id="opcoes-menu"><!--grey darken-1-->					
-				<li><a href="#menu"> Home</a></li>	
-				<li><a href="#plan-format"> Planos Formatação</a></li>					
-				<li><a href="#descricao-servicos"> Serviços</a></li>	
-				<li><a href="#contact"> Contatos</a></li>						
-			</ul>
+			<div id="opcoes-menu">
+				<span class="close">Sair</span>
+				<ul >					
+					<li><a href="#menu"> Home</a></li>	</br>			
+					<li><a href="#descricao-servicos"> Serviços</a></li></br>	
+					<li><a href="#contact"> Fale Conosco</a></li>						
+				</ul>
+			</div>
+			
 		</div>
 
 		<p class="legenda">Se você precisa formatar, configurar e até mesmo montar o seu computador, entre em contato conosco e saiba mais informações.</p>				
 		
 	</header>	
-
-	<section id="plan-format" class="plan-format">
-		<h3>Planos de Formatação</h3>
-
-		<article class="col4 plan-format-bas">
-		<h4 class="legenda-plan">Básico</h4>
-		<ul>
-			<li>Backup</li>
-			<li>Orçamento sem compromisso</li>
-		</ul>
-		</article>
-		
-		<article class="col4 plan-format-int">
-		<h4 class="legenda-plan">Intermediário</h4>
-		<ul>
-			<li>Backup</li>
-			<li>Orçamento sem compromisso</li>
-			<li class="destaque">Garantia de 3 meses</li>
-			<li class="destaque">Instalação de Word, Excel e Power point</li>
-		</ul>
-		</article>
-
-		<article class="col4 plan-format-av">
-		<h4 class="legenda-plan">Avançado</h4>
-		<ul>
-			<li>Backup</li>
-			<li>Orçamento sem compromisso</li>
-			<li>Garantia de 3 meses</li>
-			<li>Instalação de Word, Excel e Power point</li>
-			<li class="destaque">Formatação Definitiva</li>
-		</ul>
-		</article>
-	</section>
 
 	<section class="slider">			
 		<!--Carroussel-->
@@ -104,9 +200,8 @@
 		</ul>
 	</section>
 
-
 	<section id="descricao-servicos" >
-		<h4 id="services">SERVIÇOS</h4>
+		<h2 id="services">SERVIÇOS</h2>
 		<article id="servicos-diversos">
 			<h3>Instalação e Configuração</h3>	
 
@@ -125,26 +220,25 @@
 			</script>
 
 			<div id="formatacao" class="contraste-preto col-tb servicos">
-				<h5 class="center-align">Formatação</h5>
+				<h5 class="title2">Formatação</h5>
 				<div class="servico">			
 					<img class="service-image responsive-img" src="img/virus.jpg" >
 				</div>
-					
-					<img id="more-details" class="more-details" src="img/plus.png">
+					<a href="#planFormatModal"><img id="more-details" class="more-details" src="img/plus.png"></a>
 					<ol class="descricao-servico" style="font-size:20px">
 						<li>Fazemos o backup de seus dados.</li>
 						<li>Formatamos, configuramos, damos orientações e ferramentas para que tenha a melhor experiência possível com seu computador e por um preço justo.</li>
 						<li>Damos garantia do serviço</li>
 					</ol>
-			</div>
+			</div>		
 
 			<div id="instalacao" class="col-tb servicos contraste-preto">
-				<h5 class="center-align" >Instalações</h5>
+				<h5 class="title2" >Instalações</h5>
 				<div class="servico">
 					<img class="service-image responsive-img" src="img/manutencao2.jpg" >
 				</div>
 
-					<img id="more-details" class="more-details" src="img/plus.png">
+					<a href="#instalacaoModal"><img id="more-details" class="more-details" src="img/plus.png"></a>
 					<ol class="descricao-servico">
 						<li>Instalação de Placas;</li>
 						<li>Instalação de drivers;</li>
@@ -153,12 +247,12 @@
 			</div>
 
 			<div id="configuracao" class="contraste-preto col-tb servicos">
-				<h5 class="center-align" >Configuração</h5>
+				<h5 class="title2" >Configuração</h5>
 				<div class="servico">
 					<img class="service-image responsive-img" src="img/configuracao2.png" >
 				</div>
 	
-				<img id="more-details" class="more-details" src="img/plus.png">
+				<a href="#configModal"><img id="more-details" class="more-details" src="img/plus.png"></a>
 				<ol class="descricao-servico">
 					<li>Configuração do Sistema operação</li>
 					<li>Configuração de programas</li>
@@ -167,17 +261,19 @@
 			</div>
 
 		</article>
+	
+		</div>
 
 		<article id="manutencao-pc">
 			<h3>Manutenção do Computador</h3>
 
 			<div id="troca-pecas" class="col-tb servicos contraste-preto">
-				<h5 class="center-align" >Checkup e Upgrade</h5>
+				<h5 class="title2" >Checkup e Upgrade</h5>
 				<div class="servico">
 					<img class="service-image responsive-img" src="img/troca-pecas.png" >
 				</div>
 
-				<img id="more-details" class="more-details" src="img/plus.png">
+				<a href="#checkModal"><img id="more-details" class="more-details" src="img/plus.png"></a>
 				<ol class="descricao-servico">
 					<li>Limpeza;</li>
 					<li>Troca de peças: HD, Memória, cooler, placa wireless e etc...</li>
@@ -186,12 +282,12 @@
 			</div>
 
 			<div id="manutencao" class="contraste-preto col-tb servicos">
-			<h5 class="center-align" >Montagem e Manutenção</h5>
+			<h5 class="title2" >Montagem e Manutenção</h5>
 				<div class="servico">
 					<img class="service-image responsive-img" src="img/manutencao.png">
 				</div>
 
-				<img id="more-details" class="more-details" src="img/plus.png">
+				<a href="#montModal"><img id="more-details" class="more-details" src="img/plus.png"></a>
 				<ol class="descricao-servico">
 					<li>Motagem de computador de baixo custo e Gamer;</li>
 					<li>Correção de defeitos diversos.</li>
@@ -199,12 +295,12 @@
 			</div>
 
 			<div id="recuperacao-componente" class="col-tb servicos contraste-preto">
-			<h5 class="center-align" >Recuperação de Placa Mãe</h5>
+			<h5 class="title2" >Recuperação de Placa Mãe</h5>
 				<div class="servico">
 					<img class="service-image responsive-img" src="img/manutencao.jpg">
 				</div>
 
-				<img id="more-details" class="more-details" src="img/plus.png">
+				<a href="#recuperacaoModal"><img id="more-details" class="more-details" src="img/plus.png"></a>
 				<ul class="descricao-servico">
 					<li>Troca de componentes eletrônicos.</li>
 				</ul>
@@ -216,12 +312,12 @@
 			<h3>Manutenção de Notebook</h3>
 
 			<div id="upgrade" class="contraste-preto col-tb servicos">
-			<h5 class="center-align" >Manutenção</h5>
+			<h5 class="title2" >Manutenção</h5>
 				<div class="servico">
 					<img class="service-image responsive-img" src="img/note.jpg" >
 				</div>			
 
-				<img id="more-details" class="more-details" src="img/plus.png">		
+				<a href="#manutModal"><img id="more-details" class="more-details" src="img/plus.png">	</a>	
 				<ol class="descricao-servico">
 					<li>Troca de peças: HD, Memória, cooler, placa wireless e etc...</li>
 					<li>Upgrade.</li>
@@ -231,12 +327,12 @@
 			</div>
 
 			<div id="troca-tela" class="col-tb servicos contraste-preto">
-				<h5 class="center-align" >Tela Quebrada</h5>
+				<h5 class="title2" >Tela Quebrada</h5>
 				<div class="servico">
 					<img class="service-image responsive-img" src="img/note2.jpg" >
 				</div>
 	
-				<img id="more-details" class="more-details" src="img/plus.png">
+				<a href="#telaModal"><img id="more-details" class="more-details" src="img/plus.png"></a>
 				<ol class="descricao-servico">
 					<li>Troca e reparo de cabos flat de tela LCD</li>
 					<li>Troca de tela LCD quebradas.</li>
@@ -244,12 +340,12 @@
 			</div>
 
 			<div id="troca-bateria" class="contraste-preto col-tb servicos">
-				<h5 class="center-align" >Baterias Viciadas</h5>
+				<h5 class="title2" >Baterias Viciadas</h5>
 				<div class="servico">
 					<img class="service-image responsive-img" src="img/baterias-notebook.jpg" >
 				</div>
 
-				<img id="more-details" class="more-details" src="img/plus.png">	
+				<a href="#bateriaModal"><img id="more-details" class="more-details" src="img/plus.png">	</a>
 				<ul class="descricao-servico">
 					<li>Troca e/ou manutenção de baterias viciadas</li>
 				</ul>
@@ -262,7 +358,10 @@
 
 	<section id="contact">
 
-		<h2 class="center-align grey lighten-1  white-text"><img class="responsive-img" class="responsive-img"  src="img/contact.png" align="center">Contatos</h2>
+		<h2 class="title grey lighten-1  white-text">
+			<img class="responsive-img" class="responsive-img"  src="img/contact.png" align="center">
+			Fale Conosco
+		</h2>
 
 		<div class="row container">
 			<form class="e-mail col-sm col-pc" name="formulario" method="post">
@@ -285,84 +384,75 @@
 
 			</form>
 			<div class="contatos col-sm col-pc" >	
-				<img class="responsive-img" class="responsive-img"  src="img/contact3.png" width="30px">	
+				<img id="tel" class="responsive-img" width="36" height="36">
 				<span id="email-company"></span><br>
 
-				<img class="responsive-img" class="responsive-img"  src="img/whatsapp3.png" width="30px">	
+				<img id="whats" class="responsive-img" width="97" height="97">	
 				<span id="whatsapp"></span><br>
 
-				<img class="responsive-img" class="responsive-img"  src="img/contact2.png" width="30px">	
+				<img id="map" class="responsive-img"  width="97" height="97">	
 				<span id="phone"></span>		
 			</div>
 		</div>
+		
+		<h2>Como Chegar<h2>
+		<iframe 
+			width="600" 
+			height="450" 
+			frameborder="0" 
+			style="border:0" 
+			src="https://www.google.com/maps/embed/v1/place?q=place_id:EkJSLiBDaW5jbywgMzQ2IC0gUGFycXVlIEVsaXphYmV0aCwgSWJpcml0w6kgLSBNRywgMzI0MDAtMDAwLCBCcmFzaWw&key=AIzaSyBQ3pvoJAjabFuPJ0blxXjIqrK9wosvf7c" 
+			allowfullscreen>
+		</iframe>
+	</section>
+	
+		<?php
+
+		function zerar(){		
+			unset($email_destino);
+			unset($nome);
+			unset($email_contato);
+			unset($assunto);
+			unset($mensagem);
+		}
+
+		$email_destino="contato@suportedesk.com.br";
+		$nome=$_POST['nome'];
+		$email_contato=$_POST['email'];
+		$assunto=$_POST['assunto'];
+		$mensagem=$_POST['mensagem'];
+	
+
+		if (isset($nome)&& isset($email_contato) && isset($mensagem)
+
+			&& mail($email_destino, $assunto, $mensagem,"from:contato@suportedesk.com.br")){
+
+			echo '<script>alert("'.$nome.' sua mensagem foi enviada com sucesso.");</script>';
+
+			zerar();
+			}
+
+		?>
+		<!--<video width="500" preload="auto" controls muted>
+		<source src="img/DEfeitosPrologo Oficial.mp4" type="video/mp4">
+		</video>-->
+	<section id="formasPagamento" >
+		<h2>Formas de Pagamento</h2>
+		<div id="pagamento" > </div>
 	</section>
 
-	
-<?php
-
-	function zerar(){		
-
-		unset($email_destino);
-		unset($nome);
-		unset($email_contato);
-		unset($assunto);
-		unset($mensagem);
-	}
-
-
-	$email_destino="contato@suportedesk.com.br";
-	$nome=$_POST['nome'];
-	$email_contato=$_POST['email'];
-	$assunto=$_POST['assunto'];
-	$mensagem=$_POST['mensagem'];
-	
-
-	if (isset($nome)&& isset($email_contato) && isset($mensagem)
-
-		&& mail($email_destino, $assunto, $mensagem,"from:contato@suportedesk.com.br")){
-
-	echo '<script>alert("'.$nome.' sua mensagem foi enviada com sucesso.");</script>';
-
-	zerar();
-
-	}
-
-
-?>
-
-
-	<footer class="page-footer grey darken-2">			
+	<footer id="rodape" class="paddingU2">			
 
 		<section>
-			<a href="#versoes">V.5.0 </a>By 
-			<span id="dev"></span> 
-		<!--<a id="autor" href="https://about.me/miqueiasmelo">Miquéias</a> site: 			
-		<a id="site" href="http://www.losapp.net">losapp.net</a>-->				
-		<a id="source" href="https://github.com/hackbras/suportedesk-v5.0"><img class="responsive-img" class="responsive-img"  src="img/github.png" width="20px"></a>
-		
-		<div id="versoes" class="modal bootom-sheet">
-			<div class="modal-content">
-				<h5></h5>
-				<img src="img/v0.5.jpg">
+			<span class="ano" width="45%">Suportedesk 2013 à 2017</span>
+			
+			<span  width="45%">
+				<a href="#versaoModal">V.5.0 </a>By 	
 
-				<h5></h5>
-				<img src="img/v1.0.jpg">
-				
-				<h5></h5>		
-				<img src="img/v2.0.PNG">
-
-				<h5></h5>
-				<img src="img/v3.0.PNG">								
-				
-				<h5></h5>
-				<img src="img/v4.0.PNG">
-
-			</div>
-			<div class="modal-footer">
-			  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">X</a>
-			</div>
-		</div>	
-
+				<a id="by" href="https://github.com/hackbras/SuporteDesk" target="_blank">
+					<img class="responsive-img" class="responsive-img"  src="img/github.png" width="20px">
+				</a>
+			</span>
 		</section>
 		
 	</footer>   

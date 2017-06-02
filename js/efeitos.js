@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 //caroussel
 $(document).ready(function(){
-    $('.slider').slider({full_width: false});
+    $('.slider').slider({full_width: true});
     
 });
 
@@ -17,12 +17,12 @@ $(document).ready(function(){
 
 //scrollfire
 /*
-  var options = [
-  	{
-  		selector: '.servicos', 
-  		offset: 500, 
-  		callback: function() {
-  			Materialize.fadeInImage($(el));
-  			} 
- 	}]; 
- 	Materialize.scrollFire(options);*/
+var options = [
+	{
+		selector: '.servicos', 
+		offset: 500, 
+		callback: function() {
+		Materialize.fadeInImage($(el));
+	} 
+}]; 
+Materialize.scrollFire(options);*/
